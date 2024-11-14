@@ -1,59 +1,185 @@
 ---
 import Container from "./Container.astro";
-
+import unconnectedDevices from "../assets/unconnectedDevices.png";
 ---
 
 <div id="solution">
-    <Container>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-sky-500">
-        <path fill-rule="evenodd" d="M2.25 13.5a8.25 8.25 0 018.25-8.25.75.75 0 01.75.75v6.75H18a.75.75 0 01.75.75 8.25 8.25 0 01-16.5 0z" clip-rule="evenodd" />
-        <path fill-rule="evenodd" d="M12.75 3a.75.75 0 01.75-.75 8.25 8.25 0 018.25 8.25.75.75 0 01-.75.75h-7.5a.75.75 0 01-.75-.75V3z" clip-rule="evenodd" />
-      </svg>
-      
-      <div class="space-y-6 justify-between text-gray-600 md:flex flex-row-reverse md:gap-6 md:space-y-0 lg:gap-12 lg:items-center">
+  <Container>
+    <div class="my-10">
+      <div
+        class="space-y-6 justify-between text-gray-600 md:flex flex-row-reverse md:gap-6 md:space-y-0 lg:gap-12 lg:items-center"
+      >
         <div class="md:5/12 lg:w-1/2">
           <img
-            src="./images/pie.svg"
-            alt="image"
-            loading="lazy"
-            width=""
-            height=""
-            class="w-full"
+            src={unconnectedDevices}
+            alt="unconnected devices"
+            class="w-full mt-12 md:mt-0"
           />
         </div>
         <div class="md:7/12 lg:w-1/2">
-          <h2 class="text-3xl font-bold text-gray-900 md:text-4xl dark:text-white">
-            Nuxt development is carried out by passionate developers
+          <h2
+            class="text-3xl font-bold text-gray-900 md:text-4xl dark:text-white"
+          >
+            Real-Time, Uninterrupted Practice
           </h2>
           <p class="my-8 text-gray-600 dark:text-gray-300">
-            Nobis minus voluptatibus pariatur dignissimos libero quaerat iure expedita at?
-            Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia. <br> <br> Vitae error, quaerat officia delectus voluptatibus explicabo quo pariatur impedit, at reprehenderit aliquam a ipsum quas voluptatem. Quo pariatur asperiores eum amet.
+            Review every movement instantly on your iPad, while your iPhone
+            continues recording live. Analyze in real-time without pausing the
+            action.
           </p>
           <div class="divide-y space-y-4 divide-gray-100 dark:divide-gray-800">
             <div class="mt-8 flex gap-4 md:items-center">
-              <div class="w-12 h-12 flex gap-4 rounded-full bg-indigo-100 dark:bg-indigo-900/20">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 m-auto text-indigo-500 dark:text-indigo-400">
-                  <path fill-rule="evenodd" d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97zM6.75 8.25a.75.75 0 01.75-.75h9a.75.75 0 010 1.5h-9a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H7.5z" clip-rule="evenodd" />
-                </svg>        
+              <div
+                class="w-12 h-12 flex gap-4 rounded-full bg-indigo-100 dark:bg-indigo-900/20"
+              >
+                <svg
+                  class="p-3"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M16.6582 9.28638C18.098 10.1862 18.8178 10.6361 19.0647 11.2122C19.2803 11.7152 19.2803 12.2847 19.0647 12.7878C18.8178 13.3638 18.098 13.8137 16.6582 14.7136L9.896 18.94C8.29805 19.9387 7.49907 20.4381 6.83973 20.385C6.26501 20.3388 5.73818 20.0469 5.3944 19.584C5 19.053 5 18.1108 5 16.2264V7.77357C5 5.88919 5 4.94701 5.3944 4.41598C5.73818 3.9531 6.26501 3.66111 6.83973 3.6149C7.49907 3.5619 8.29805 4.06126 9.896 5.05998L16.6582 9.28638Z"
+                      stroke="#008cb4"
+                      stroke-width="2"
+                      stroke-linejoin="round"></path>
+                  </g>
+                </svg>
               </div>
               <div class="w-5/6">
-                <h4 class="font-semibold text-lg text-gray-700 dark:text-indigo-300">Chat Anytime</h3>
-                <p class="text-gray-500 dark:text-gray-400">Asperiores nemo possimus nesciunt quam mollitia.</p>
-              </div> 
-            </div> 
+                <h4
+                  class="font-semibold text-lg text-gray-700 dark:text-teal-300"
+                >
+                  Hands-Free Coaching
+                </h4>
+                <p class="text-gray-500 dark:text-gray-400">
+                  Prop your iPhone up, connect to your iPad, and focus on
+                  coaching without holding devices.
+                </p>
+              </div>
+            </div>
             <div class="pt-4 flex gap-4 md:items-center">
-              <div class="w-12 h-12 flex gap-4 rounded-full bg-teal-100 dark:bg-teal-900/20">  
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 m-auto text-teal-600 dark:text-teal-400">
-                  <path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
-                </svg>                                      
+              <div
+                class="w-12 h-12 flex gap-4 rounded-full bg-teal-100 dark:bg-teal-900/20"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-6 h-6 m-auto text-teal-600 dark:text-teal-400"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+                    clip-rule="evenodd"></path>
+                </svg>
               </div>
               <div class="w-5/6">
-                <h4 class="font-semibold text-lg text-gray-700 dark:text-teal-300">Real Time Location</h3>
-                <p class="text-gray-500 dark:text-gray-400">Asperiores nemo possimus nesciunt quam mollitia.</p>
-              </div> 
-            </div> 
+                <h4
+                  class="font-semibold text-lg text-gray-700 dark:text-teal-300"
+                >
+                  Instant, In-Depth Analysis
+                </h4>
+                <p class="text-gray-500 dark:text-gray-400">
+                  Review each turn with frame-by-frame analysis, immediately
+                  after it happens.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </Container>
+    </div>
+
+    <div class="my-10">
+      <div
+        class="space-y-6 justify-between text-gray-600 md:flex flex-row-reverse md:gap-6 md:space-y-0 lg:gap-12 lg:items-center"
+      >
+        <div class="md:7/12 lg:w-1/2">
+          <h2
+            class="text-3xl font-bold text-gray-900 md:text-4xl dark:text-white"
+          >
+            No Mounted Cameras, No Expensive TVs
+          </h2>
+          <p class="my-8 text-gray-600 dark:text-gray-300">
+            With your iPhone and iPad, you have all the power you need to
+            capture practice moments without costly equipment. Keep it portable,
+            simple, and affordable.
+          </p>
+          <div class="divide-y space-y-4 divide-gray-100 dark:divide-gray-800">
+            <div class="mt-8 flex gap-4 md:items-center">
+              <div
+                class="w-12 h-12 flex gap-4 rounded-full bg-teal-100 dark:bg-teal-900/20"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-6 h-6 m-auto text-teal-600 dark:text-teal-400"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </div>
+              <div class="w-5/6">
+                <h4
+                  class="font-semibold text-lg text-gray-700 dark:text-teal-300"
+                >
+                  Portable = Powerful
+                </h4>
+                <p class="text-gray-500 dark:text-gray-400">
+                  Get the benefits of live video review on every event, not just
+                  the pit bar.
+                </p>
+              </div>
+            </div>
+            <div class="pt-4 flex gap-4 md:items-center">
+              <div
+                class="w-12 h-12 flex gap-4 rounded-full bg-green-100 dark:bg-teal-900/20"
+              >
+                <div
+                  class="w-12 h-12 flex gap-4 rounded-full bg-teal-100 dark:bg-teal-900/20"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="w-6 h-6 m-auto text-teal-600 dark:text-teal-400"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="w-5/6">
+                <h4
+                  class="font-semibold text-lg text-gray-700 dark:text-indigo-300"
+                >
+                  Instant Setup
+                </h4>
+                <p class="text-gray-500 dark:text-gray-400">
+                  Set up in seconds and start capturing immediately—no complex
+                  equipment needed.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="md:5/12 lg:w-1/2">
+          <img
+            src={unconnectedDevices}
+            alt="unconnected devices"
+            class="w-full mt-12 md:mt-0"
+          />
+        </div>
+      </div>
+    </div>
+  </Container>
 </div>
