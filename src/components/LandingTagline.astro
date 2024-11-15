@@ -1,6 +1,6 @@
 ---
 import Container from "./Container.astro";
-import beam from "../assets/beam.png";
+import beam from "../assets/beam-tripod.png";
 ---
 
 <div class="relative" id="home">
@@ -20,7 +20,17 @@ import beam from "../assets/beam.png";
   <Container>
     <div class="relative pt-36 ml-auto">
       <div class="text-center mx-auto">
-        <div class="flex flex-col md:flex-row items-center">
+        <h1
+          class="text-gray-900 dark:text-white font-bold text-5xl md:text-6xl xl:text-7xl"
+        >
+          Make the most of every practice with <span class="text-primary"
+            >devices you already own.</span
+          >
+        </h1>
+        <p class="mt-8 text-center text-xl text-gray-600 dark:text-gray-300">
+          Early access open now.
+        </p>
+        <!-- <div class="flex flex-col md:flex-row items-center">
           <div class="w-full md:w-1/2 p-4">
             <h1
               class="text-gray-900 dark:text-white font-bold text-5xl md:text-6xl xl:text-7xl"
@@ -37,18 +47,18 @@ import beam from "../assets/beam.png";
               class="w-full mt-12 md:mt-0"
             />
           </div>
-        </div>
+        </div> -->
         <div class="mt-12 flex flex-wrap justify-center gap-y-4 gap-x-6">
           <a
             href="#"
             class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
           >
             <span class="relative text-base font-semibold text-white"
-              >Get started</span
+              >Download for free</span
             >
           </a>
           <a
-            href="#"
+            href="#features"
             class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-primary/10 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 sm:w-max"
           >
             <span
